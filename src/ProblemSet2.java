@@ -7,7 +7,7 @@
  * and print certain required values to the console. All of this is explained
  * (and demonstrated, when appropriate) in the README file.
  */
-
+import java.util.Scanner;
 public class ProblemSet2 {
 	
 	/**
@@ -25,7 +25,14 @@ public class ProblemSet2 {
 	}
 	
 	public void sayHello() {
-		
+		System.out.println("What's your first and last name?");
+		Scanner scanner = new Scanner( System.in );
+		System.out.print("Input your first name: ");
+		String input = scanner.nextLine();
+		System.out.print("Input your last name: ");
+		String input2 = scanner.nextLine();
+		System.out.println("Hello, " + input + " " + input2);
+		scanner.close();
 	}
 	
 	public void gradeMe() {
